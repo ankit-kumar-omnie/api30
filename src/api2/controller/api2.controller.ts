@@ -24,6 +24,7 @@ export class Api2Controller {
       return await this.api2service.createpost(dto);
     } catch (error) {
       throw new HttpException(error.message, error.statuscode ?? 400);
+      
     }
   }
 }
